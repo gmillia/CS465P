@@ -1,0 +1,68 @@
+body
+{
+    font-family:Helvetica;
+}
+
+#image-1
+{
+    height: auto;
+    width: auto;
+    max-height: 287px;
+    max-width: 200px;
+}
+
+#image-2, #image-3
+{
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 140px;
+}
+
+#container
+{
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 50px;
+}
+
+#primary-container
+{
+    height: 100%;
+    width: 100%;
+}
+
+#big-cat
+{
+    width: 408px;
+    height: 100%;
+    float: left;
+}
+
+#small-cats
+{
+    float: right;
+}
+
+#header
+{
+    color: grey;
+    font-size: 60px;
+}
+
+.links
+{
+    background-color: rgb(63, 60, 60);
+    color: white;
+    width: 408px;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(140, 228, 140);
+}
