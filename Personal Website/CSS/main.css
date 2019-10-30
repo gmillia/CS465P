@@ -60,6 +60,26 @@ h5{
 }
 
 /*About Page*/
+.topImage
+{
+    width: 125%;
+    height: auto;
+    overflow: hidden;
+    margin-top: -175px;
+}
+
+#ukraineIMG
+{
+    max-width: 100%;
+    max-height: 100%;
+    width: 1400px;
+    height: 400px;
+}
+
+.h1-about{
+    margin-top: 50px;
+}
+
 .h1-about
 {
     color: black;
@@ -83,4 +103,9 @@ ul
 {
     list-style: none;
     padding: 0;
+}
+
+.infoBody
+{
+    font-size: 25px;
 }
