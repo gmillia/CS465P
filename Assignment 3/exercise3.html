@@ -8,6 +8,7 @@
             {
                 color: white;
             }
+
             .data
             {
                 background: grey;
@@ -17,17 +18,28 @@
                 margin: 5px;
             }
 
-            .col-3
+            .left-col
+            {
+                margin-left: 25px;
+                margin-right: -25px;
+            
+            }
+
+            .mid-col
             {
                 margin-right: -25px;
             }
 
+            .right-col
+            {
+                margin-right: 25px;
+            }
         </style>
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container d-flex align-items-center justify-content-center">
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 left-col">
                     <div class="row">
                         <div class="col-12">
                             <div class="data">One</div>
@@ -40,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 mid-col">
                     <div class="row">
                         <div class="col-12">
                             <div class="data">Two</div>
@@ -53,7 +65,7 @@
                         </div>
                     </div>
                 </div>     
-                <div class="col-3">
+                <div class="col-3 mid-col">
                     <div class="row">
                         <div class="col-12">
                             <div class="data">Three</div>
@@ -66,7 +78,7 @@
                         </div>
                     </div>
                 </div>  
-                <div class="col-3">
+                <div class="col-3 right-col">
                     <div class="row">
                         <div class="col-12">
                             <div class="data">Four</div>

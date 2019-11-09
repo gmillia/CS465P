@@ -18,22 +18,14 @@
                 margin: 5px;
             }
 
-            .left
+            .two, .three
             {
-                padding-left: 25px;
-                padding-right: 3px;
+                min-height: 300px;
             }
 
-            .right
+            .three
             {
-                padding-right: 25px;
-                padding-left: 3px;
-            }
-
-            .last
-            {
-                padding-right: 24px;
-                padding-left: 24px;
+                margin-left: -20px;
             }
 
         </style>
@@ -41,32 +33,21 @@
     <body>
         <div class="container">     
             <div class="row">
-                <div class="col-3 left">
+                <div class="col-12">
                     <div class="data">One</div>
                 </div>
-                <div class="col-8 right">
-                    <div class="data">Two</div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="data two">Two</div>
+                </div>
+                <div class="col-11">
+                    <div class="data three">Three</div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-3 left">
-                    <div class="data">Three</div>
-                </div>
-                <div class="col-8 right">
+                <div class="col-12">
                     <div class="data">Four</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3 left">
-                    <div class="data">Five</div>
-                </div>
-                <div class="col-8 right">
-                    <div class="data">Six</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-11 last">
-                    <div class="data">Seven</div>
                 </div>
             </div>
         </div>

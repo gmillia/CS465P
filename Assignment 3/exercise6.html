@@ -18,22 +18,34 @@
                 margin: 5px;
             }
 
-            .left
+            .left, .right
             {
-                padding-left: 25px;
-                padding-right: 3px;
+                min-height: 300px;
             }
 
-            .right
+            .one
             {
-                padding-right: 25px;
-                padding-left: 3px;
+                min-height: 400px;
+                margin-right: -10px;
             }
 
-            .last
+            .two 
             {
-                padding-right: 24px;
-                padding-left: 24px;
+                min-height: 200px;
+                margin-bottom: 0px;
+                margin-left: -10px;
+            }
+
+            .three
+            {
+                margin-bottom: 0px;
+            }
+
+            .three, .four
+            {
+                margin-top: 10px;
+                min-height: 90px;
+                margin-left: -10px;
             }
 
         </style>
@@ -41,32 +53,34 @@
     <body>
         <div class="container">     
             <div class="row">
-                <div class="col-3 left">
-                    <div class="data">One</div>
-                </div>
-                <div class="col-8 right">
-                    <div class="data">Two</div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-4 left">
+                            <div class="data one">One</div>
+                        </div>
+                        <div class="col-8 right">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="data two">Two</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="data three">Three</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="data four">Four</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-3 left">
-                    <div class="data">Three</div>
-                </div>
-                <div class="col-8 right">
-                    <div class="data">Four</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3 left">
+                <div class="col-12">
                     <div class="data">Five</div>
-                </div>
-                <div class="col-8 right">
-                    <div class="data">Six</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-11 last">
-                    <div class="data">Seven</div>
                 </div>
             </div>
         </div>

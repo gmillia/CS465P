@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        Input<input type="text" id="inputField">
+        <input type="submit" value="Submit" id="submitBtn">
+    </body>
+    <script>
+        $('#submitBtn').on('click', function() {
+            var input = $('#inputField').val();
+            console.log(input.split("").reverse().join(""));
+        });
+    </script>
+</html>
