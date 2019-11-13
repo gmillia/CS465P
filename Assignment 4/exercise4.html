@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style>
+            body
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            #container
+            {
+                display: flex;
+                flex-direction: row;
+                font-size: 25px;
+            }
+
+            #width, #height
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 100px;
+                min-height: 100px;
+                background: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="width"></div>
+            <div style="min-width: 20px"></div>
+            <div id="height"></div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(() => {
+            updateVals();
+            $(window).resize(() => updateVals());
+        })
+
+        function updateVals()
+        {
+            var width = $(window).width();
+            var height = $(window).height();
+            $('#width').text(width);
+            $("#height").text(height); 
+        }
+    </script>
+</html>
